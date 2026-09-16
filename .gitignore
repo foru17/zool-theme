@@ -1,0 +1,18 @@
+node_modules/
+dist/
+release/
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+.vite/
+coverage/
+# local agent working files
+project-tasks.json
+.ui-acceptance/**/*.png
+.ui-acceptance/**/*.jpg
+
+# internal records, kept outside the public repo
+.ui-acceptance/
+*.bundle

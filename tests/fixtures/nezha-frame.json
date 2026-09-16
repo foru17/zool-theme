@@ -1,0 +1,639 @@
+{
+ "now": 1789494632000,
+ "online": 2,
+ "servers": [
+  {
+   "id": 6,
+   "name": "Node 01",
+   "display_index": 100,
+   "host": {
+    "platform": "istoreos",
+    "cpu": [
+     "Intel(R) Celeron(R) N5105 @ 2.00GHz 2 Physical Core"
+    ],
+    "mem_total": 2077859840,
+    "disk_total": 2172448768,
+    "arch": "x86_64",
+    "boot_time": 1783588084
+   },
+   "state": {
+    "cpu": 12.225705342698651,
+    "mem_used": 763162624,
+    "disk_used": 528048128,
+    "net_in_transfer": 5615781497988,
+    "net_out_transfer": 14849330045863,
+    "net_in_speed": 300026,
+    "net_out_speed": 3186649,
+    "uptime": 5906545,
+    "load_1": 0.37,
+    "load_5": 0.36,
+    "load_15": 0.36,
+    "tcp_conn_count": 890,
+    "udp_conn_count": 123,
+    "process_count": 202
+   },
+   "country_code": "cn",
+   "last_active": "2026-09-16T01:50:29.881703833+08:00"
+  },
+  {
+   "id": 25,
+   "name": "Node 02",
+   "display_index": 100,
+   "host": {
+    "platform": "openwrt",
+    "cpu": [
+     "Cortex-A53 2 Physical Core"
+    ],
+    "mem_total": 1038307328,
+    "disk_total": 7722696704,
+    "arch": "aarch64",
+    "boot_time": 1751198806
+   },
+   "state": {
+    "cpu": 8.171205460870915,
+    "mem_used": 679141376,
+    "disk_used": 893644800,
+    "net_in_transfer": 389582552633,
+    "net_out_transfer": 381488615475,
+    "net_in_speed": 1749,
+    "net_out_speed": 1802,
+    "uptime": 38295825,
+    "load_1": 0.4,
+    "load_5": 0.28,
+    "load_15": 0.22,
+    "tcp_conn_count": 375,
+    "udp_conn_count": 45,
+    "process_count": 100
+   },
+   "country_code": "hk",
+   "last_active": "2026-09-16T01:50:31.768863092+08:00"
+  },
+  {
+   "id": 19,
+   "name": "🇨🇳 Node 03",
+   "display_index": 99,
+   "host": {
+    "platform": "debian",
+    "cpu": [
+     "Intel(R) Xeon(R) Platinum 2 Virtual Core"
+    ],
+    "mem_total": 1825513472,
+    "disk_total": 42090295296,
+    "swap_total": 1074786304,
+    "arch": "x86_64",
+    "boot_time": 1783672752
+   },
+   "state": {
+    "cpu": 3.338632764097496,
+    "mem_used": 1414664192,
+    "disk_used": 29492576256,
+    "net_in_transfer": 211455499835,
+    "net_out_transfer": 383066632482,
+    "net_in_speed": 1587,
+    "net_out_speed": 3017,
+    "uptime": 5821880,
+    "load_1": 0.52,
+    "load_5": 0.27,
+    "load_15": 0.15,
+    "tcp_conn_count": 277,
+    "udp_conn_count": 11,
+    "process_count": 203
+   },
+   "country_code": "cn",
+   "last_active": "2026-09-16T01:50:32.259615126+08:00"
+  },
+  {
+   "id": 36,
+   "name": "🇨🇳 Node 04",
+   "display_index": 98,
+   "host": {
+    "platform": "debian",
+    "cpu": [
+     "AMD EPYC 7K83 64-Core Processor 2 Virtual Core"
+    ],
+    "mem_total": 2035912704,
+    "disk_total": 41657360384,
+    "swap_total": 1074786304,
+    "arch": "x86_64",
+    "boot_time": 1780850778
+   },
+   "state": {
+    "cpu": 2.384737713317281,
+    "mem_used": 1083285504,
+    "swap_used": 246632448,
+    "disk_used": 19145220096,
+    "net_in_transfer": 1851314883784,
+    "net_out_transfer": 1825784138737,
+    "net_in_speed": 12888,
+    "net_out_speed": 13950,
+    "uptime": 8643851,
+    "load_1": 0.07,
+    "load_5": 0.13,
+    "load_15": 0.14,
+    "tcp_conn_count": 1040,
+    "udp_conn_count": 17,
+    "process_count": 135
+   },
+   "country_code": "cn",
+   "last_active": "2026-09-16T01:50:29.385916636+08:00"
+  },
+  {
+   "id": 27,
+   "name": "🇨🇳 Node 05",
+   "display_index": 97,
+   "host": {
+    "platform": "debian",
+    "cpu": [
+     "AMD EPYC 7K83 64-Core Processor 2 Virtual Core"
+    ],
+    "mem_total": 997916672,
+    "disk_total": 41954803712,
+    "arch": "x86_64",
+    "boot_time": 1779448603
+   },
+   "state": {
+    "cpu": 0.6399999856948853,
+    "mem_used": 376614912,
+    "disk_used": 6033973248,
+    "net_in_transfer": 4296482549958,
+    "net_out_transfer": 3696195857802,
+    "net_in_speed": 3225361,
+    "net_out_speed": 1646295,
+    "uptime": 10045950,
+    "tcp_conn_count": 136,
+    "udp_conn_count": 5,
+    "process_count": 96
+   },
+   "country_code": "cn",
+   "last_active": "2026-09-16T01:50:31.848166336+08:00"
+  },
+  {
+   "id": 31,
+   "name": "🇨🇳 Node 06",
+   "display_index": 97,
+   "host": {
+    "platform": "debian",
+    "cpu": [
+     "Intel(R) N100 1 Virtual Core"
+    ],
+    "mem_total": 1014308864,
+    "disk_total": 31859761152,
+    "swap_total": 1805643776,
+    "arch": "x86_64",
+    "virtualization": "kvm",
+    "boot_time": 1787331562
+   },
+   "state": {
+    "cpu": 1.5822784752767647,
+    "mem_used": 414765056,
+    "swap_used": 18698240,
+    "disk_used": 5153202176,
+    "net_in_transfer": 5784947518,
+    "net_out_transfer": 5805737608,
+    "net_in_speed": 1463,
+    "net_out_speed": 1416,
+    "uptime": 2163067,
+    "tcp_conn_count": 57,
+    "udp_conn_count": 3,
+    "process_count": 99
+   },
+   "country_code": "cn",
+   "last_active": "2026-09-16T01:50:29.851009102+08:00"
+  },
+  {
+   "id": 29,
+   "name": "🇯🇵 Node 07",
+   "display_index": 6,
+   "host": {
+    "platform": "debian",
+    "cpu": [
+     "AMD EPYC-Milan Processor 5 Virtual Core"
+    ],
+    "mem_total": 10382299136,
+    "disk_total": 107177029632,
+    "swap_total": 4294963200,
+    "arch": "x86_64",
+    "boot_time": 1783483446
+   },
+   "state": {
+    "cpu": 0.3861003402210304,
+    "mem_used": 4080619520,
+    "swap_used": 197636096,
+    "disk_used": 61552005120,
+    "net_in_transfer": 447042254882,
+    "net_out_transfer": 432110222399,
+    "net_in_speed": 5996,
+    "net_out_speed": 581,
+    "uptime": 6011184,
+    "load_1": 0.08,
+    "load_5": 0.08,
+    "load_15": 0.07,
+    "tcp_conn_count": 192,
+    "udp_conn_count": 21,
+    "process_count": 242
+   },
+   "country_code": "jp",
+   "last_active": "2026-09-16T01:50:30.236243587+08:00"
+  },
+  {
+   "id": 4,
+   "name": "🇺🇸 Node 08",
+   "display_index": 5,
+   "host": {
+    "platform": "debian",
+    "cpu": [
+     "AMD EPYC 7R32 48-Core Processor 16 Virtual Core"
+    ],
+    "mem_total": 33652830208,
+    "disk_total": 211199320064,
+    "arch": "x86_64",
+    "virtualization": "kvm",
+    "boot_time": 1728529981
+   },
+   "state": {
+    "cpu": 5.039402829545459,
+    "mem_used": 17674403840,
+    "disk_used": 131358744576,
+    "net_in_transfer": 36985071942809,
+    "net_out_transfer": 41357152749492,
+    "net_in_speed": 34513,
+    "net_out_speed": 42023,
+    "uptime": 60964648,
+    "load_1": 1.09,
+    "load_5": 0.67,
+    "load_15": 0.59,
+    "tcp_conn_count": 2305,
+    "udp_conn_count": 18,
+    "process_count": 529
+   },
+   "country_code": "us",
+   "last_active": "2026-09-16T01:50:29.629892756+08:00"
+  },
+  {
+   "id": 23,
+   "name": "Node 09",
+   "display_index": 2,
+   "host": {
+    "platform": "debian",
+    "cpu": [
+     "Intel(R) Celeron(R) N5105 @ 2.00GHz 2 Physical Core"
+    ],
+    "mem_total": 2079186944,
+    "disk_total": 19947929600,
+    "swap_total": 1022357504,
+    "arch": "x86_64",
+    "boot_time": 1783588218
+   },
+   "state": {
+    "cpu": 16.586921862996718,
+    "mem_used": 1060622336,
+    "swap_used": 130547712,
+    "disk_used": 13579866112,
+    "net_in_transfer": 199166262053,
+    "net_out_transfer": 189816340999,
+    "net_in_speed": 1372,
+    "net_out_speed": 1472,
+    "uptime": 5906412,
+    "load_1": 0.26,
+    "load_5": 0.3,
+    "load_15": 0.35,
+    "tcp_conn_count": 30,
+    "udp_conn_count": 4,
+    "process_count": 219
+   },
+   "country_code": "us",
+   "last_active": "2026-09-16T01:50:30.186355761+08:00"
+  },
+  {
+   "id": 8,
+   "name": "Node 10",
+   "host": {
+    "platform": "debian",
+    "cpu": [
+     "Intel(R) Celeron(R) N5105 @ 2.00GHz 4 Physical Core"
+    ],
+    "mem_total": 8190345216,
+    "disk_total": 17393354351616,
+    "swap_total": 6241103872,
+    "arch": "x86_64",
+    "boot_time": 1783588204
+   },
+   "state": {
+    "cpu": 65.71892770224835,
+    "mem_used": 5582770176,
+    "swap_used": 2999947264,
+    "disk_used": 8694330375168,
+    "net_in_transfer": 6645900465456,
+    "net_out_transfer": 4598123560886,
+    "net_in_speed": 977576,
+    "net_out_speed": 888972,
+    "uptime": 5906428,
+    "load_1": 3.94,
+    "load_5": 4.43,
+    "load_15": 4.56,
+    "tcp_conn_count": 157,
+    "udp_conn_count": 118,
+    "process_count": 381
+   },
+   "country_code": "us",
+   "last_active": "2026-09-16T01:50:32.205512703+08:00"
+  },
+  {
+   "id": 9,
+   "name": "Node 11",
+   "host": {
+    "cpu": [
+     "Intel(R) Celeron(R) CPU  N3060  @ 1.60GHz 2 Physical Core"
+    ],
+    "mem_total": 8287404032,
+    "disk_total": 4073670754304,
+    "swap_total": 7121850368,
+    "arch": "x86_64",
+    "boot_time": 1779331116
+   },
+   "state": {
+    "cpu": 6.113537146319027,
+    "mem_used": 1683587072,
+    "swap_used": 681525248,
+    "disk_used": 3862550929408,
+    "net_in_transfer": 15783329641598,
+    "net_out_transfer": 1011427381418,
+    "net_in_speed": 895412,
+    "net_out_speed": 10376,
+    "uptime": 10163515,
+    "load_1": 0.27,
+    "load_5": 0.52,
+    "load_15": 1.03,
+    "tcp_conn_count": 192,
+    "process_count": 438
+   },
+   "country_code": "us",
+   "last_active": "2026-09-16T01:50:31.242505492+08:00"
+  },
+  {
+   "id": 32,
+   "name": "🇭🇰 Node 12",
+   "host": {
+    "platform": "debian",
+    "cpu": [
+     "AMD EPYC 7663 56-Core Processor 1 Virtual Core"
+    ],
+    "mem_total": 1014345728,
+    "disk_total": 21046689792,
+    "swap_total": 2147479552,
+    "arch": "x86_64",
+    "boot_time": 1789489672
+   },
+   "state": {
+    "cpu": 4.458598726124612,
+    "mem_used": 626749440,
+    "swap_used": 94556160,
+    "disk_used": 11366371328,
+    "net_in_transfer": 4498526690,
+    "net_out_transfer": 3773697818,
+    "net_in_speed": 48238,
+    "net_out_speed": 40772,
+    "uptime": 4958,
+    "load_1": 0.1,
+    "load_5": 0.15,
+    "load_15": 0.45,
+    "tcp_conn_count": 561,
+    "udp_conn_count": 45,
+    "process_count": 108
+   },
+   "country_code": "hk",
+   "last_active": "2026-09-16T01:50:30.349773544+08:00"
+  },
+  {
+   "id": 35,
+   "name": "🇭🇰 Node 13",
+   "host": {
+    "platform": "debian",
+    "cpu": [
+     "Intel(R) Xeon(R) Platinum 8269CY CPU @ 2.50GHz 2 Virtual Core"
+    ],
+    "mem_total": 2062479360,
+    "disk_total": 21023531008,
+    "arch": "x86_64",
+    "boot_time": 1783485816
+   },
+   "state": {
+    "cpu": 0.3184713304952338,
+    "mem_used": 399204352,
+    "disk_used": 4576317440,
+    "net_in_transfer": 1664034123328,
+    "net_out_transfer": 1651867579306,
+    "net_in_speed": 14601,
+    "net_out_speed": 14170,
+    "uptime": 6008813,
+    "load_1": 0.04,
+    "load_5": 0.01,
+    "tcp_conn_count": 775,
+    "udp_conn_count": 9,
+    "process_count": 79
+   },
+   "country_code": "hk",
+   "last_active": "2026-09-16T01:50:29.898899019+08:00"
+  },
+  {
+   "id": 38,
+   "name": "🇭🇰 Node 14",
+   "host": {
+    "platform": "debian",
+    "cpu": [
+     "AMD EPYC-Milan Processor 1 Virtual Core"
+    ],
+    "mem_total": 1014951936,
+    "disk_total": 20922114048,
+    "arch": "x86_64",
+    "boot_time": 1787111180
+   },
+   "state": {
+    "cpu": 0.6369426757259864,
+    "mem_used": 264355840,
+    "disk_used": 2503413760,
+    "net_in_transfer": 449776834175,
+    "net_out_transfer": 421242061254,
+    "net_in_speed": 33737,
+    "net_out_speed": 25286,
+    "uptime": 2383450,
+    "load_1": 0.01,
+    "load_5": 0.01,
+    "tcp_conn_count": 236,
+    "udp_conn_count": 5,
+    "process_count": 80
+   },
+   "country_code": "hk",
+   "last_active": "2026-09-16T01:50:30.653064328+08:00"
+  },
+  {
+   "id": 39,
+   "name": "🇨🇳 Node 15",
+   "host": {
+    "platform": "debian",
+    "cpu": [
+     "Intel Xeon Processor (Cascadelake) 1 Virtual Core"
+    ],
+    "mem_total": 1014956032,
+    "disk_total": 20922114048,
+    "arch": "x86_64",
+    "boot_time": 1787156582
+   },
+   "state": {
+    "cpu": 0.9523809535270669,
+    "mem_used": 510267392,
+    "disk_used": 1944838144,
+    "net_in_transfer": 441554235407,
+    "net_out_transfer": 423810496822,
+    "net_in_speed": 25413,
+    "net_out_speed": 25192,
+    "uptime": 2338046,
+    "load_1": 0.11,
+    "load_5": 0.04,
+    "load_15": 0.01,
+    "tcp_conn_count": 443,
+    "udp_conn_count": 4,
+    "process_count": 78
+   },
+   "country_code": "cn",
+   "last_active": "2026-09-16T01:50:28.862905667+08:00"
+  },
+  {
+   "id": 40,
+   "name": "🇺🇸 Node 16",
+   "host": {
+    "platform": "debian",
+    "cpu": [
+     "AMD EPYC-Milan Processor 4 Virtual Core"
+    ],
+    "mem_total": 7865249792,
+    "disk_total": 49516572672,
+    "swap_total": 1073737728,
+    "arch": "x86_64",
+    "virtualization": "kvm",
+    "boot_time": 1788580178
+   },
+   "state": {
+    "cpu": 2.3411371258423133,
+    "mem_used": 2611060736,
+    "swap_used": 3170304,
+    "disk_used": 21074214912,
+    "net_in_transfer": 15719892207,
+    "net_out_transfer": 5417883865,
+    "net_in_speed": 5134,
+    "net_out_speed": 945,
+    "uptime": 914454,
+    "load_1": 0.2,
+    "load_5": 0.25,
+    "load_15": 0.2,
+    "tcp_conn_count": 230,
+    "udp_conn_count": 6,
+    "process_count": 208
+   },
+   "country_code": "us",
+   "last_active": "2026-09-16T01:50:32.219484246+08:00"
+  },
+  {
+   "id": 41,
+   "name": "Node 17",
+   "host": {},
+   "state": {},
+   "last_active": "0001-01-01T00:00:00Z"
+  },
+  {
+   "id": 42,
+   "name": "🇺🇸 Node 18",
+   "host": {
+    "platform": "debian",
+    "cpu": [
+     "AMD EPYC-Milan Processor 1 Virtual Core"
+    ],
+    "mem_total": 2069700608,
+    "disk_total": 21046689792,
+    "swap_total": 1073737728,
+    "arch": "x86_64",
+    "boot_time": 1784334862
+   },
+   "state": {
+    "cpu": 8.026755831070522,
+    "mem_used": 1281384448,
+    "swap_used": 326676480,
+    "disk_used": 7674470400,
+    "net_in_transfer": 1044124392034,
+    "net_out_transfer": 975066422469,
+    "net_in_speed": 54862,
+    "net_out_speed": 59093,
+    "uptime": 5159768,
+    "load_1": 0.83,
+    "load_5": 0.25,
+    "load_15": 0.12,
+    "tcp_conn_count": 442,
+    "udp_conn_count": 6,
+    "process_count": 133
+   },
+   "country_code": "br",
+   "last_active": "2026-09-16T01:50:30.594128452+08:00"
+  },
+  {
+   "id": 43,
+   "name": "Node 19",
+   "host": {
+    "platform": "debian",
+    "cpu": [
+     "AMD EPYC 7663 56-Core Processor 1 Virtual Core"
+    ],
+    "mem_total": 1007362048,
+    "disk_total": 21046689792,
+    "swap_total": 1073737728,
+    "arch": "x86_64",
+    "boot_time": 1789489344
+   },
+   "state": {
+    "cpu": 0.6349206349343839,
+    "mem_used": 283656192,
+    "disk_used": 3592011776,
+    "net_in_transfer": 1705300737,
+    "net_out_transfer": 454798021,
+    "net_in_speed": 34437,
+    "net_out_speed": 21530,
+    "uptime": 5285,
+    "load_1": 0.1,
+    "load_5": 0.03,
+    "load_15": 0.01,
+    "tcp_conn_count": 125,
+    "udp_conn_count": 4,
+    "process_count": 68
+   },
+   "country_code": "hk",
+   "last_active": "2026-09-16T01:50:29.266244263+08:00"
+  },
+  {
+   "id": 44,
+   "name": "🇭🇰 Node 20",
+   "host": {
+    "platform": "debian",
+    "cpu": [
+     "Intel(R) Xeon(R) Platinum 2 Virtual Core"
+    ],
+    "mem_total": 452194304,
+    "disk_total": 5194285056,
+    "arch": "x86_64",
+    "boot_time": 1787046141
+   },
+   "state": {
+    "mem_used": 210309120,
+    "disk_used": 1256546304,
+    "net_in_transfer": 42885498988,
+    "net_out_transfer": 44549161170,
+    "net_in_speed": 165,
+    "net_out_speed": 359,
+    "uptime": 2448382,
+    "tcp_conn_count": 43,
+    "udp_conn_count": 2,
+    "process_count": 93
+   },
+   "country_code": "hk",
+   "last_active": "2026-09-16T01:50:31.660997434+08:00"
+  }
+ ]
+}

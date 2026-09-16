@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Komari Monitor</title>
+    <meta name="description" content="A simple server monitor tool." />
+    <meta name="generator" content="zool v%ZOOL_VERSION%" />
+    <meta name="theme-color" content="#fafaf8" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#111412" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script>
+      // Resolve appearance before first paint to avoid a light flash in dark mode.
+      ;(function () {
+        var root = document.documentElement
+        var stored = null
+        try {
+          stored = localStorage.getItem('appearance')
+          if (stored && stored.charAt(0) === '"') stored = JSON.parse(stored)
+        } catch (e) {}
+        var mode = stored === 'light' || stored === 'dark' ? stored : 'system'
+        var dark = mode === 'dark' || (mode === 'system' && matchMedia('(prefers-color-scheme: dark)').matches)
+        root.dataset.theme = dark ? 'dark' : 'light'
+        root.style.colorScheme = dark ? 'dark' : 'light'
+      })()
+    </script>
+    <script>
+      // A previous theme's PWA service worker can keep serving its own precached
+      // index.html (which points at assets that no longer exist). Drop it once.
+      ;(function () {
+        if (!('serviceWorker' in navigator)) return
+        navigator.serviceWorker.getRegistrations().then(function (regs) {
+          if (!regs.length) return
+          Promise.all(regs.map(function (r) { return r.unregister() }))
+            .then(function () { return window.caches ? caches.keys().then(function (k) { return Promise.all(k.map(function (n) { return caches.delete(n) })) }) : null })
+            .then(function () {
+              try {
+                if (sessionStorage.getItem('zool:sw-cleared')) return
+                sessionStorage.setItem('zool:sw-cleared', '1')
+              } catch (e) {}
+              location.reload()
+            })
+        })
+      })()
+    </script>
+    <!-- zool:runtime-config -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

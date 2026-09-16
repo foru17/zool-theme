@@ -1,0 +1,129 @@
+{
+  "name": "ZOOL",
+  "short": "zool-theme",
+  "description": "A calm, refined theme by ZOOL. Light and dark, four languages, live charts. 简约精致的 Komari 主题，支持明暗模式与多语言。",
+  "version": "1.0.0",
+  "author": "ZOOL",
+  "url": "https://github.com/foru17/zool-theme",
+  "preview": "preview.png",
+  "configuration": {
+    "type": "managed",
+    "data": [
+      {
+        "type": "title",
+        "name": "Appearance · 外观"
+      },
+      {
+        "key": "defaultAppearance",
+        "name": "Default appearance · 默认外观",
+        "type": "select",
+        "options": "system,light,dark",
+        "default": "system",
+        "help": "Used until a visitor picks one. 访客未选择时的外观。"
+      },
+      {
+        "key": "defaultView",
+        "name": "Default home view · 默认首页视图",
+        "type": "select",
+        "options": "ledger,cards",
+        "default": "ledger",
+        "help": "Ledger rows compare many nodes side by side; cards give each node its own block. Visitors can switch. 台账适合多节点逐行比对，卡片适合单节点浏览，访客可自行切换。"
+      },
+      {
+        "key": "defaultDensity",
+        "name": "Ledger density · 台账密度",
+        "type": "select",
+        "options": "comfortable,compact",
+        "default": "comfortable",
+        "help": "Row height of the node ledger. 节点台账的行高。"
+      },
+      {
+        "key": "defaultLanguage",
+        "name": "Default language · 默认语言",
+        "type": "select",
+        "options": "auto,en,zh-CN,zh-TW,ja",
+        "default": "auto",
+        "help": "auto follows the visitor's browser. auto 跟随访客浏览器语言。"
+      },
+      {
+        "key": "siteTitle",
+        "name": "Site title override · 站点标题",
+        "type": "string",
+        "default": "",
+        "help": "Leave empty to use the site name from Komari settings. 留空则使用 Komari 设置里的站点名称。"
+      },
+      {
+        "type": "title",
+        "name": "Home page · 首页"
+      },
+      {
+        "key": "showOverview",
+        "name": "Show overview · 显示总览",
+        "type": "switch",
+        "default": true
+      },
+      {
+        "key": "showCost",
+        "name": "Show monthly cost · 显示月度成本",
+        "type": "switch",
+        "default": true,
+        "help": "Sums node prices per currency, normalised to 30 days. No exchange-rate lookups. 按币种合计并折算为 30 天，不请求任何汇率接口。"
+      },
+      {
+        "key": "showGroups",
+        "name": "Offer the group filter · 提供分组筛选",
+        "type": "switch",
+        "default": true,
+        "help": "Offer the group filter on the home page. When disabled, hide the control and never section by group, regardless of defaultGrouped. 在首页提供分组筛选控件。关闭时隐藏控件且始终不按分组分段，不受 defaultGrouped 影响。"
+      },
+      {
+        "key": "defaultGrouped",
+        "name": "Show by group by default · 「按分组展示」按钮默认开启",
+        "type": "switch",
+        "default": false,
+        "help": "Default state of the visitor’s “Show by group” button. 访客的「按分组展示」按钮默认状态。"
+      },
+      {
+        "key": "showRegions",
+        "name": "Show region filter · 显示地区筛选",
+        "type": "switch",
+        "default": true
+      },
+      {
+        "key": "showBilling",
+        "name": "Show price and expiry on cards · 卡片显示价格与到期",
+        "type": "switch",
+        "default": true
+      },
+      {
+        "key": "showOffline",
+        "name": "List offline nodes · 显示离线节点",
+        "type": "switch",
+        "default": true
+      },
+      {
+        "key": "hiddenNodes",
+        "name": "Hidden nodes · 隐藏节点",
+        "type": "nodes",
+        "help": "Hidden from the home page, search and node switcher. 从首页、搜索与节点切换中隐藏。"
+      },
+      {
+        "type": "title",
+        "name": "Header & footer · 页眉与页脚"
+      },
+      {
+        "key": "hideAdminEntry",
+        "name": "Hide sign-in for visitors · 对访客隐藏登录入口",
+        "type": "switch",
+        "default": false,
+        "help": "You can still open /admin directly. 仍可直接访问 /admin。"
+      },
+      {
+        "key": "footerNote",
+        "name": "Footer note · 页脚备注",
+        "type": "string",
+        "default": ""
+      }
+    ]
+  }
+}

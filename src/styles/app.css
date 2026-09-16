@@ -1,0 +1,624 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/inter/wght.css';
+
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+/*
+ * ZOOL design tokens — from the ZOOL brand kit (visual-guidelines.md).
+ * paper / ink / muted / line / wash / sage / sage-text are the brand palette;
+ * surface, faint, warn and danger are dashboard additions tuned to it.
+ */
+:root {
+  --paper: #fafaf8;
+  --surface: #ffffff;
+  --ink: #191b1a;
+  --muted: #666e68;
+  --faint: #a3aba5;
+  --line: #dde1dc;
+  --line-strong: #c9cfc9;
+  --wash: #eff1ed;
+  --sage: #b8c8be;
+  --sage-text: #53695a;
+  --good: #3F7D5A;
+  --warn: #9a5b0b;
+  --warn-fill: #B07316;
+  --danger: #b3261e;
+  --overlay: rgb(17 20 18 / 0.36);
+  --shadow-pop: 0 24px 48px -12px rgb(24 37 27 / 0.18), 0 0 0 1px rgb(24 37 27 / 0.06);
+  --chart-1: #191b1a;
+  --chart-2: #6f8f7a;
+  --chart-3: #b08a4a;
+  --chart-4: #8a8fb8;
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --paper: #111412;
+  --surface: #161a17;
+  --ink: #f4f6f3;
+  --muted: #a6b0a8;
+  --faint: #5f6962;
+  --line: #2b322d;
+  --line-strong: #3c453e;
+  --wash: #1b221d;
+  --sage: #728c7b;
+  --sage-text: #b8c8be;
+  --good: #7FB894;
+  --warn: #e0a54a;
+  --warn-fill: #E0A54A;
+  --danger: #f2837a;
+  --overlay: rgb(0 0 0 / 0.6);
+  --shadow-pop: 0 24px 64px -12px rgb(0 0 0 / 0.6), 0 0 0 1px rgb(255 255 255 / 0.06);
+  --chart-1: #f4f6f3;
+  --chart-2: #9fbba8;
+  --chart-3: #d9b36f;
+  --chart-4: #aab0dc;
+  color-scheme: dark;
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --muted: #464c48;
+    --line: #9aa29c;
+  }
+  :root[data-theme='dark'] {
+    --muted: #d4dad5;
+    --line: #6f7871;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-wash: var(--wash);
+  --color-sage: var(--sage);
+  --color-sage-text: var(--sage-text);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+  --font-sans: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace;
+  --shadow-pop: var(--shadow-pop);
+  --ease-out-soft: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@layer base {
+  html {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    scrollbar-gutter: stable;
+  }
+  html:lang(ja) {
+    font-family: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', 'Yu Gothic',
+      Meiryo, sans-serif;
+  }
+  html:lang(zh-TW) {
+    font-family: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+  }
+  body {
+    min-height: 100dvh;
+    background: var(--paper);
+  }
+  ::selection {
+    background: var(--sage);
+    color: #111412;
+  }
+  :focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  button {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: default;
+  }
+  dialog {
+    color: var(--ink);
+  }
+  dialog::backdrop {
+    background: var(--overlay);
+    backdrop-filter: blur(2px);
+  }
+}
+
+@layer components {
+  .wrap {
+    width: min(1200px, 100% - 40px);
+    margin-inline: auto;
+  }
+  @media (min-width: 768px) {
+    .wrap {
+      width: min(1200px, 100% - 96px);
+    }
+  }
+
+  .num {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: 'tnum' 1, 'cv11' 1;
+  }
+
+  [data-stale] [data-instrument],
+  [data-stale] .num {
+    opacity: .55;
+    transition: opacity .3s;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  html:lang(zh-CN) .eyebrow,
+  html:lang(zh-TW) .eyebrow,
+  html:lang(ja) .eyebrow {
+    letter-spacing: 0.08em;
+  }
+
+  /* Pill controls, after the ZOOL site: outline marks the active choice. */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 36px;
+    padding: 0 14px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    color: var(--muted);
+    font-size: 13px;
+    white-space: nowrap;
+    transition:
+      color 0.15s,
+      border-color 0.15s,
+      background-color 0.15s;
+  }
+  .pill:hover {
+    color: var(--ink);
+  }
+  .pill[aria-pressed='true'],
+  .pill[aria-selected='true'] {
+    border-color: var(--ink);
+    color: var(--ink);
+  }
+
+  /* A 4:3 flag. The hairline keeps white-field flags (Japan, Korea) from dissolving into the
+     paper in light mode and dark flags into the page in dark mode; it is drawn inside the
+     image so the flag keeps its 16x12 box. */
+  .flag {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 16px;
+    height: 12px;
+    border-radius: 2px;
+    object-fit: cover;
+    outline: 1px solid var(--line);
+    outline-offset: -1px;
+  }
+
+  /* A system's square icon: the brand colour is set inline. The inset ring separates tiles
+     whose brand colour is close to the surface (Apple and AlmaLinux are black, Synology is a
+     light grey) without changing their size. */
+  .os-tile {
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.08);
+  }
+  [data-theme='dark'] .os-tile {
+    box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.16);
+  }
+
+  .icon-btn {
+    display: inline-grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    color: var(--muted);
+    transition:
+      color 0.15s,
+      background-color 0.15s;
+  }
+  .icon-btn[aria-disabled='true'] {
+    cursor: default;
+    opacity: 0.6;
+  }
+  .icon-btn:hover {
+    color: var(--ink);
+    background: var(--wash);
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 48px;
+    padding: 0 22px;
+    border-radius: 999px;
+    background: var(--ink);
+    color: var(--paper);
+    font-size: 14px;
+    transition:
+      opacity 0.15s,
+      transform 0.15s;
+  }
+  .btn-primary:hover {
+    opacity: 0.86;
+  }
+  .btn-primary:active {
+    transform: translateY(1px);
+  }
+  .btn-primary:disabled {
+    opacity: 0.5;
+  }
+
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 36px;
+    padding: 0 16px;
+    border-radius: 999px;
+    border: 1px solid var(--ink);
+    font-size: 13px;
+    white-space: nowrap;
+    transition: background-color 0.15s;
+  }
+  .btn-outline:hover {
+    background: var(--wash);
+  }
+
+  .field {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 16px;
+    border-radius: 12px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+    color: var(--ink);
+    font-size: 15px;
+    transition:
+      border-color 0.15s,
+      box-shadow 0.15s;
+  }
+  .field::placeholder {
+    color: var(--muted);
+  }
+  .field:focus {
+    outline: none;
+    border-color: var(--ink);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--ink) 10%, transparent);
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+  }
+
+  /* Usage bar: a hairline track with an ink fill that turns amber / red near the limit. */
+
+  /* Empty instrument cells: a wash fill on paper, an outline in the dark where wash and
+     paper sit too close together to tell apart. */
+  /* An empty cell has to be countable, not just present: at 1.2:1 against paper the eye
+     cannot tell four empty blocks from five. These land near 1.9:1, still quiet enough to
+     stay behind the filled cells. */
+  .cell-empty {
+    position: relative;
+    overflow: hidden;
+    /* line-strong alone reads 1.5:1 on paper; a touch of ink brings it to ~1.9:1 */
+    background: color-mix(in srgb, var(--ink) 12%, var(--line-strong));
+  }
+  :root[data-theme='dark'] .cell-empty {
+    background: transparent;
+    box-shadow: inset 0 0 0 1px var(--line-strong);
+  }
+  .cell-fill {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    transform-origin: 0 50%;
+  }
+  /* The fill sweeps cell by cell at one linear speed; each cell's slice of the 0.7s move comes
+     from useSweep as --sweep-delay and --sweep-duration. The colour eases on its own clock. */
+  [data-animate] .cell-fill {
+    transition-property: transform, background-color;
+    transition-timing-function: linear, var(--ease-out-soft);
+    transition-duration: var(--sweep-duration, 0s), 0.7s;
+    transition-delay: var(--sweep-delay, 0s), 0s;
+  }
+
+  .status-dot {
+    position: relative;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--sage-text);
+    flex: none;
+  }
+  .status-dot[data-online='false'] {
+    background: transparent;
+    box-shadow: inset 0 0 0 1.5px var(--danger);
+  }
+  .status-dot[data-pending] {
+    background: var(--line-strong);
+    box-shadow: none;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .status-dot[data-online='true']::after {
+      content: '';
+      position: absolute;
+      inset: -3px;
+      border-radius: inherit;
+      border: 1px solid var(--sage-text);
+      opacity: 0;
+      animation: zool-ping 2.6s var(--ease-out-soft) infinite;
+    }
+  }
+
+  .popover {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: var(--shadow-pop);
+  }
+
+  .scroll-x {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .scroll-x::-webkit-scrollbar {
+    display: none;
+  }
+  @media (width < 768px) {
+    .home-toolbar .scroll-x {
+      mask-image: linear-gradient(to right, black calc(100% - 20px), transparent);
+    }
+  }
+
+  .fade-in {
+    animation: zool-fade 0.4s var(--ease-out-soft) both;
+  }
+
+  .skeleton {
+    background: linear-gradient(90deg, var(--wash) 0%, var(--line) 50%, var(--wash) 100%);
+    background-size: 200% 100%;
+    animation: zool-shimmer 1.4s linear infinite;
+    border-radius: 8px;
+  }
+
+  /* Same four ledger slots as the live md:contents layout. On phones the first two
+     retain their labels, instrument and number slots; network occupies both halves. */
+  /* Placeholders shimmer only while waiting; for a node that is down they stand still. */
+  a:not([data-pending]) .skeleton {
+    animation: none;
+  }
+
+  .pending-strip {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px 12px;
+    margin-top: 8px;
+    padding-left: 26px;
+  }
+  .pending-strip > span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 16.5px;
+    min-width: 0;
+  }
+  .pending-strip .skeleton {
+    height: 11px;
+    flex: 1;
+  }
+  .pending-strip > span > :nth-child(3) {
+    flex: none;
+    width: 32px;
+  }
+  .pending-strip > span:nth-child(2) > :nth-child(3) {
+    width: 48px;
+  }
+  .pending-strip > span:nth-child(3) {
+    grid-column: span 2;
+  }
+  .pending-strip > span:nth-child(3) > :nth-child(3) {
+    flex: 1;
+    margin-left: 6px;
+  }
+  .pending-strip > span:nth-child(4),
+  .pending-strip > span > :nth-child(n+4) {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    .pending-strip {
+      display: contents;
+    }
+    .pending-strip > span {
+      justify-content: end;
+    }
+    .pending-strip > span > :nth-child(3) {
+      display: none;
+    }
+    .pending-strip > span:first-child .skeleton {
+      flex: none;
+      width: 116px;
+    }
+    .pending-strip > span:nth-child(2) .skeleton {
+      flex: none;
+      width: 168px;
+    }
+    .pending-strip > span:nth-child(3) {
+      grid-column: auto;
+      height: 27.5px;
+    }
+    .pending-strip > span:nth-child(4) {
+      display: flex;
+    }
+  }
+  @media (min-width: 1024px) {
+    .pending-strip > span:nth-child(3) {
+      height: 26px;
+    }
+    [data-density='compact'] .pending-strip > span:nth-child(3) {
+      height: 20px;
+    }
+  }
+
+  /* Card reading slots: percentage, bar, sub; then spark, two rates and traffic.
+     The percentage/sub skeletons are centered in the original text line boxes. */
+  .pending-card {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px 16px;
+    margin-top: 20px;
+  }
+  .pending-card > span {
+    display: grid;
+    grid-template-rows: 18px 4px 25px 10px 14px 8px 16.5px;
+    min-width: 0;
+  }
+  .pending-card > span > :first-child {
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--muted);
+  }
+  .pending-card .skeleton {
+    display: block;
+    align-self: center;
+  }
+  .pending-card > span > :nth-child(2) {
+    grid-row: 3;
+    height: 24px;
+    width: 70%;
+  }
+  .pending-card > span > :nth-child(3) {
+    grid-row: 5;
+    height: 14px;
+  }
+  .pending-card > span > :nth-child(4) {
+    grid-row: 7;
+    height: 11px;
+    width: 85%;
+  }
+  .pending-card > span > :nth-child(5) {
+    display: none;
+  }
+  .pending-card > span:last-child {
+    grid-column: span 3;
+    /* Bytes' inline unit makes the live traffic line box 22px, around a 20px bar. */
+    grid-template: 18px 32px 24px 22px / repeat(2, minmax(0, 1fr));
+    gap: 8px 12px;
+    border-top: 1px solid var(--line);
+    padding-top: 16px;
+  }
+  .pending-card > span:last-child > :is(:first-child, :nth-child(2), :nth-child(5)) {
+    grid-column: span 2;
+  }
+  .pending-card > span:last-child > .skeleton {
+    display: block;
+    grid-row: auto;
+    width: auto;
+    height: 100%;
+    margin: 0;
+  }
+  .pending-card > span:last-child > :nth-child(5) {
+    height: 20px;
+  }
+  @container (width < 320px) {
+    .pending-card {
+      gap: 16px 12px;
+      margin-top: 16px;
+    }
+    .pending-card > span:not(:last-child) {
+      grid-template-rows: 16.5px 4px 22.5px 10px 14px 8px 16.5px;
+    }
+    .pending-card > span:not(:last-child) > :first-child {
+      font-size: 11px;
+      line-height: 16.5px;
+    }
+  }
+}
+
+/* Keep touch targets above utility-sized controls without changing mouse layouts. */
+@media (pointer: coarse) {
+  header .icon-btn {
+    width: 44px;
+    height: 44px;
+  }
+  .home-toolbar button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* A segmented control keeps its buttons the same shape as its frame: 40px tall pills, 44px
+     wide, inside a 2px inset. Forcing 44px of height into a 32px-tall frame had stretched the
+     pressed button into an upright oval that spilled past the frame's curve. */
+  .home-toolbar .segmented {
+    padding: 2px;
+  }
+  .home-toolbar .segmented > button,
+  .home-toolbar .segmented > .relative > button {
+    height: 40px;
+    min-height: 40px;
+    min-width: 44px;
+  }
+}
+
+@keyframes zool-ping {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.7;
+  }
+  80%,
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@keyframes zool-fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes zool-shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    /* the cell sweep staggers with delays; without this a reading would wait, then jump */
+    transition-delay: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}

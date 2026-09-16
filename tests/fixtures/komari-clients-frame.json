@@ -1,0 +1,638 @@
+{
+ "data": {
+  "online": [
+   "88e0f78f-e30a-4fde-af06-2ab08567076e",
+   "64e1f919-8514-4e92-8dd0-3e30f0e1c255",
+   "da866d5c-318e-4107-9366-740daa241df6",
+   "4a29402e-a098-4a39-9300-4d91686f317a",
+   "7a82b8f1-6392-45ca-9133-b23d1e11c88b",
+   "22d14187-6d6d-46b5-921a-705346c79eeb",
+   "c1a6aa99-92d9-485d-a238-2903a332d452",
+   "70fe6b7b-f0cb-4319-aeaf-01eb04ba1554",
+   "2b368c43-2466-4f1c-99e3-6329dd714b78",
+   "8276bf74-9d8b-4195-a1df-e4158b279370",
+   "cb3ea7cf-8a46-48d6-8c11-2015518b1536",
+   "b13c92a6-e495-4277-a3cc-9cdc4211a9ca",
+   "7e690dff-e571-4917-9af1-90f340b3349a",
+   "db7abf8b-6c20-4528-b25b-20cce81fa0e7",
+   "ebb1195b-f10c-4d36-9e73-c75d8b776d4b",
+   "3fb91a97-5fec-4022-a23d-ff67d9b80723",
+   "3f9bcde9-cead-4e4a-8707-5ee835d44493"
+  ],
+  "data": {
+   "22d14187-6d6d-46b5-921a-705346c79eeb": {
+    "cpu": {
+     "usage": 1.3333333345750966
+    },
+    "ram": {
+     "total": 1014956032,
+     "used": 358735872
+    },
+    "swap": {
+     "total": 0,
+     "used": 0
+    },
+    "load": {
+     "load1": 0,
+     "load5": 0,
+     "load15": 0
+    },
+    "disk": {
+     "total": 21051832320,
+     "used": 1954299904
+    },
+    "network": {
+     "up": 23876,
+     "down": 24459,
+     "totalUp": 423862860080,
+     "totalDown": 441608278962
+    },
+    "connections": {
+     "tcp": 256,
+     "udp": 4
+    },
+    "uptime": 2338919,
+    "process": 78,
+    "message": "",
+    "updated_at": "2026-09-15T18:05:01.314787095Z"
+   },
+   "2b368c43-2466-4f1c-99e3-6329dd714b78": {
+    "cpu": {
+     "usage": 10.961214196618956
+    },
+    "ram": {
+     "total": 8287404032,
+     "used": 1430224896
+    },
+    "swap": {
+     "total": 7121850368,
+     "used": 623366144
+    },
+    "load": {
+     "load1": 0.34,
+     "load5": 0.31,
+     "load15": 0.57
+    },
+    "disk": {
+     "total": 4073670754304,
+     "used": 3862904107008
+    },
+    "network": {
+     "up": 19260,
+     "down": 1618919,
+     "totalUp": 1011450151844,
+     "totalDown": 15784822102923
+    },
+    "connections": {
+     "tcp": 232,
+     "udp": 64
+    },
+    "uptime": 10164385,
+    "process": 437,
+    "message": "",
+    "updated_at": "2026-09-15T18:05:00.284789036Z"
+   },
+   "3f9bcde9-cead-4e4a-8707-5ee835d44493": {
+    "cpu": {
+     "usage": 0.12547051162872988
+    },
+    "ram": {
+     "total": 452194304,
+     "used": 203599872
+    },
+    "swap": {
+     "total": 0,
+     "used": 0
+    },
+    "load": {
+     "load1": 0,
+     "load5": 0,
+     "load15": 0
+    },
+    "disk": {
+     "total": 5194285056,
+     "used": 1256652800
+    },
+    "network": {
+     "up": 423,
+     "down": 191,
+     "totalUp": 44549866426,
+     "totalDown": 42885892375
+    },
+    "connections": {
+     "tcp": 34,
+     "udp": 2
+    },
+    "uptime": 2449250,
+    "process": 94,
+    "message": "",
+    "updated_at": "2026-09-15T18:04:59.404142678Z"
+   },
+   "3fb91a97-5fec-4022-a23d-ff67d9b80723": {
+    "cpu": {
+     "usage": 2.1984924600461464
+    },
+    "ram": {
+     "total": 7865249792,
+     "used": 2286759936
+    },
+    "swap": {
+     "total": 1073737728,
+     "used": 3162112
+    },
+    "load": {
+     "load1": 0.04,
+     "load5": 0.1,
+     "load15": 0.14
+    },
+    "disk": {
+     "total": 49642483200,
+     "used": 21080093184
+    },
+    "network": {
+     "up": 1613,
+     "down": 4971,
+     "totalUp": 5613157333,
+     "totalDown": 15912109435
+    },
+    "connections": {
+     "tcp": 195,
+     "udp": 6
+    },
+    "uptime": 915321,
+    "process": 209,
+    "message": "",
+    "updated_at": "2026-09-15T18:04:59.388258342Z"
+   },
+   "4a29402e-a098-4a39-9300-4d91686f317a": {
+    "cpu": {
+     "usage": 8.239700339694386
+    },
+    "ram": {
+     "total": 1038307328,
+     "used": 648433664
+    },
+    "swap": {
+     "total": 0,
+     "used": 0
+    },
+    "load": {
+     "load1": 0.14,
+     "load5": 0.29,
+     "load15": 0.25
+    },
+    "disk": {
+     "total": 15496511488,
+     "used": 1838407680
+    },
+    "network": {
+     "up": 3102,
+     "down": 2845,
+     "totalUp": 448675860701,
+     "totalDown": 394714476546
+    },
+    "connections": {
+     "tcp": 157,
+     "udp": 30
+    },
+    "uptime": 38296693,
+    "process": 98,
+    "message": "",
+    "updated_at": "2026-09-15T18:04:58.642601619Z"
+   },
+   "64e1f919-8514-4e92-8dd0-3e30f0e1c255": {
+    "cpu": {
+     "usage": 1.5126050392282977
+    },
+    "ram": {
+     "total": 2062479360,
+     "used": 237797376
+    },
+    "swap": {
+     "total": 0,
+     "used": 0
+    },
+    "load": {
+     "load1": 0.06,
+     "load5": 0.02,
+     "load15": 0
+    },
+    "disk": {
+     "total": 21023531008,
+     "used": 4576358400
+    },
+    "network": {
+     "up": 66629,
+     "down": 67479,
+     "totalUp": 1651945740310,
+     "totalDown": 1664113117698
+    },
+    "connections": {
+     "tcp": 807,
+     "udp": 9
+    },
+    "uptime": 6009686,
+    "process": 83,
+    "message": "",
+    "updated_at": "2026-09-15T18:05:01.779884082Z"
+   },
+   "70fe6b7b-f0cb-4319-aeaf-01eb04ba1554": {
+    "cpu": {
+     "usage": 11.111111131135386
+    },
+    "ram": {
+     "total": 2079186944,
+     "used": 897019904
+    },
+    "swap": {
+     "total": 1022357504,
+     "used": 124555264
+    },
+    "load": {
+     "load1": 0.19,
+     "load5": 0.39,
+     "load15": 0.42
+    },
+    "disk": {
+     "total": 19947929600,
+     "used": 13581332480
+    },
+    "network": {
+     "up": 2795,
+     "down": 2638,
+     "totalUp": 202956242470,
+     "totalDown": 199693374134
+    },
+    "connections": {
+     "tcp": 32,
+     "udp": 4
+    },
+    "uptime": 5907281,
+    "process": 222,
+    "message": "",
+    "updated_at": "2026-09-15T18:04:59.088606689Z"
+   },
+   "7a82b8f1-6392-45ca-9133-b23d1e11c88b": {
+    "cpu": {
+     "usage": 58.18066962495052
+    },
+    "ram": {
+     "total": 8190345216,
+     "used": 4999729152
+    },
+    "swap": {
+     "total": 6241103872,
+     "used": 2953678848
+    },
+    "load": {
+     "load1": 5.85,
+     "load5": 4.21,
+     "load15": 4.24
+    },
+    "disk": {
+     "total": 17413243098112,
+     "used": 8698658114560
+    },
+    "network": {
+     "up": 326278,
+     "down": 980700,
+     "totalUp": 2348658267750,
+     "totalDown": 6199300050266
+    },
+    "connections": {
+     "tcp": 158,
+     "udp": 118
+    },
+    "uptime": 5907295,
+    "process": 383,
+    "message": "",
+    "updated_at": "2026-09-15T18:04:59.031648503Z"
+   },
+   "7e690dff-e571-4917-9af1-90f340b3349a": {
+    "cpu": {
+     "usage": 3.443208258478175
+    },
+    "ram": {
+     "total": 33652830208,
+     "used": 17143193600
+    },
+    "swap": {
+     "total": 0,
+     "used": 0
+    },
+    "load": {
+     "load1": 0.31,
+     "load5": 0.41,
+     "load15": 0.47
+    },
+    "disk": {
+     "total": 211329038336,
+     "used": 131413755904
+    },
+    "network": {
+     "up": 85518,
+     "down": 78191,
+     "totalUp": 41366744851165,
+     "totalDown": 36987365826369
+    },
+    "connections": {
+     "tcp": 2472,
+     "udp": 18
+    },
+    "uptime": 60965521,
+    "process": 530,
+    "message": "",
+    "updated_at": "2026-09-15T18:05:01.990602083Z"
+   },
+   "8276bf74-9d8b-4195-a1df-e4158b279370": {
+    "cpu": {
+     "usage": 5.541561712830767
+    },
+    "ram": {
+     "total": 1014345728,
+     "used": 486924288
+    },
+    "swap": {
+     "total": 2147479552,
+     "used": 82542592
+    },
+    "load": {
+     "load1": 0.1,
+     "load5": 0.08,
+     "load15": 0.2
+    },
+    "disk": {
+     "total": 21046689792,
+     "used": 11367661568
+    },
+    "network": {
+     "up": 56538,
+     "down": 57310,
+     "totalUp": 3903371068,
+     "totalDown": 4653803108
+    },
+    "connections": {
+     "tcp": 421,
+     "udp": 11
+    },
+    "uptime": 5827,
+    "process": 109,
+    "message": "",
+    "updated_at": "2026-09-15T18:04:58.982883225Z"
+   },
+   "88e0f78f-e30a-4fde-af06-2ab08567076e": {
+    "cpu": {
+     "usage": 1.999999986651043
+    },
+    "ram": {
+     "total": 1014308864,
+     "used": 269029376
+    },
+    "swap": {
+     "total": 1805643776,
+     "used": 18235392
+    },
+    "load": {
+     "load1": 0,
+     "load5": 0,
+     "load15": 0
+    },
+    "disk": {
+     "total": 31859761152,
+     "used": 5153202176
+    },
+    "network": {
+     "up": 1399,
+     "down": 2624,
+     "totalUp": 5837959286,
+     "totalDown": 5838215448
+    },
+    "connections": {
+     "tcp": 58,
+     "udp": 3
+    },
+    "uptime": 2163940,
+    "process": 100,
+    "message": "",
+    "updated_at": "2026-09-15T18:05:01.955545911Z"
+   },
+   "b13c92a6-e495-4277-a3cc-9cdc4211a9ca": {
+    "cpu": {
+     "usage": 1.6750419002962142
+    },
+    "ram": {
+     "total": 2035912704,
+     "used": 908324864
+    },
+    "swap": {
+     "total": 1074786304,
+     "used": 187478016
+    },
+    "load": {
+     "load1": 0.1,
+     "load5": 0.08,
+     "load15": 0.09
+    },
+    "disk": {
+     "total": 42166988800,
+     "used": 19157811200
+    },
+    "network": {
+     "up": 17803,
+     "down": 15584,
+     "totalUp": 1825846938955,
+     "totalDown": 1851376215779
+    },
+    "connections": {
+     "tcp": 799,
+     "udp": 17
+    },
+    "uptime": 8644721,
+    "process": 137,
+    "message": "",
+    "updated_at": "2026-09-15T18:04:59.336854318Z"
+   },
+   "c1a6aa99-92d9-485d-a238-2903a332d452": {
+    "cpu": {
+     "usage": 5.749999995168764
+    },
+    "ram": {
+     "total": 2069700608,
+     "used": 1014226944
+    },
+    "swap": {
+     "total": 1073737728,
+     "used": 310964224
+    },
+    "load": {
+     "load1": 0.34,
+     "load5": 0.2,
+     "load15": 0.22
+    },
+    "disk": {
+     "total": 21046689792,
+     "used": 7675297792
+    },
+    "network": {
+     "up": 22144,
+     "down": 18525,
+     "totalUp": 975292790301,
+     "totalDown": 1044368013365
+    },
+    "connections": {
+     "tcp": 357,
+     "udp": 6
+    },
+    "uptime": 5160639,
+    "process": 130,
+    "message": "",
+    "updated_at": "2026-09-15T18:05:00.892027461Z"
+   },
+   "cb3ea7cf-8a46-48d6-8c11-2015518b1536": {
+    "cpu": {
+     "usage": 0.8026755921014026
+    },
+    "ram": {
+     "total": 10382299136,
+     "used": 3940904960
+    },
+    "swap": {
+     "total": 4294963200,
+     "used": 187637760
+    },
+    "load": {
+     "load1": 0.03,
+     "load5": 0.06,
+     "load15": 0.06
+    },
+    "disk": {
+     "total": 107302940160,
+     "used": 61552637952
+    },
+    "network": {
+     "up": 4942,
+     "down": 6022,
+     "totalUp": 432289517305,
+     "totalDown": 447263157290
+    },
+    "connections": {
+     "tcp": 130,
+     "udp": 21
+    },
+    "uptime": 6012056,
+    "process": 242,
+    "message": "",
+    "updated_at": "2026-09-15T18:05:01.857716865Z"
+   },
+   "da866d5c-318e-4107-9366-740daa241df6": {
+    "cpu": {
+     "usage": 5.443037970654429
+    },
+    "ram": {
+     "total": 2077859840,
+     "used": 616919040
+    },
+    "swap": {
+     "total": 0,
+     "used": 0
+    },
+    "load": {
+     "load1": 0.25,
+     "load5": 0.46,
+     "load15": 0.44
+    },
+    "disk": {
+     "total": 4438003712,
+     "used": 1273057280
+    },
+    "network": {
+     "up": 2442580,
+     "down": 378140,
+     "totalUp": 14851903788273,
+     "totalDown": 5616692600289
+    },
+    "connections": {
+     "tcp": 720,
+     "udp": 131
+    },
+    "uptime": 5907417,
+    "process": 202,
+    "message": "",
+    "updated_at": "2026-09-15T18:05:01.504910766Z"
+   },
+   "db7abf8b-6c20-4528-b25b-20cce81fa0e7": {
+    "cpu": {
+     "usage": 1.5202702638393655
+    },
+    "ram": {
+     "total": 1825513472,
+     "used": 1346535424
+    },
+    "swap": {
+     "total": 1074786304,
+     "used": 0
+    },
+    "load": {
+     "load1": 0.07,
+     "load5": 0.28,
+     "load15": 0.21
+    },
+    "disk": {
+     "total": 42090295296,
+     "used": 29493694464
+    },
+    "network": {
+     "up": 20984,
+     "down": 14884,
+     "totalUp": 383363121894,
+     "totalDown": 212994853024
+    },
+    "connections": {
+     "tcp": 289,
+     "udp": 11
+    },
+    "uptime": 5822749,
+    "process": 204,
+    "message": "",
+    "updated_at": "2026-09-15T18:05:01.508403507Z"
+   },
+   "ebb1195b-f10c-4d36-9e73-c75d8b776d4b": {
+    "cpu": {
+     "usage": 0.25125627579219556
+    },
+    "ram": {
+     "total": 1014951936,
+     "used": 111460352
+    },
+    "swap": {
+     "total": 0,
+     "used": 0
+    },
+    "load": {
+     "load1": 0,
+     "load5": 0.01,
+     "load15": 0
+    },
+    "disk": {
+     "total": 21051832320,
+     "used": 2512736256
+    },
+    "network": {
+     "up": 25518,
+     "down": 31855,
+     "totalUp": 421293302381,
+     "totalDown": 449834531971
+    },
+    "connections": {
+     "tcp": 142,
+     "udp": 5
+    },
+    "uptime": 2384321,
+    "process": 78,
+    "message": "",
+    "updated_at": "2026-09-15T18:05:01.115434364Z"
+   }
+  }
+ },
+ "status": "success"
+}

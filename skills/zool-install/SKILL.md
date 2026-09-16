@@ -44,6 +44,10 @@ Komari >= 1.4 or Nezha dashboard v1. Do not infer the version from detection alo
 In the fresh download directory, run this in Bash, setting `panel` to the detected
 `komari` or `nezha`. Fetch release metadata once and download exactly two assets;
 do not use unbounded retries. Resolve URLs from the API, not guessed release paths.
+If the API answers 403 with "rate limit exceeded" (60 anonymous requests an hour, often
+shared behind a NAT or proxy), repeat the metadata request once with
+`-H "Authorization: Bearer $GITHUB_TOKEN"` when a token is available; otherwise report
+the limit and its reset time to the user instead of retrying.
 
 ```bash
 set -euo pipefail

@@ -6,7 +6,8 @@
     "retry": "重试",
     "poweredBy": "由 <link>{{name}}</link> 驱动",
     "theme": "ZOOL 主题 {{version}}",
-    "productBy": "ZOOL 出品的主题"
+    "productBy": "<brand /> 出品的主题",
+    "productByAria": "ZOOL 出品的主题"
   },
   "status": {
     "allOnline": "所有节点运行正常。",

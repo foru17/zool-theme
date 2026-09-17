@@ -6,7 +6,8 @@
     "retry": "再試行",
     "poweredBy": "Powered by <link>{{name}}</link>",
     "theme": "ZOOL テーマ {{version}}",
-    "productBy": "ZOOL によるテーマ"
+    "productBy": "<brand /> によるテーマ",
+    "productByAria": "ZOOL によるテーマ"
   },
   "status": {
     "allOnline": "すべてのノードが正常に稼働しています。",

@@ -6,7 +6,8 @@
     "retry": "Try again",
     "poweredBy": "Powered by <link>{{name}}</link>",
     "theme": "ZOOL theme {{version}}",
-    "productBy": "A theme by ZOOL"
+    "productBy": "A theme by <brand />",
+    "productByAria": "A theme by ZOOL"
   },
   "status": {
     "allOnline": "All systems operational.",

@@ -4,10 +4,9 @@
     "loadError": "暂时无法连接监控服务。",
     "loadErrorHint": "后端没有响应，请检查网络后重试。",
     "retry": "重试",
-    "poweredBy": "由 <link>{{name}}</link> 驱动",
+    "poweredBy": "由 <link /> 驱动",
     "theme": "ZOOL 主题 {{version}}",
-    "productBy": "<brand /> 出品的主题",
-    "productByAria": "ZOOL 出品的主题"
+    "productBy": "<link /> 出品的主题"
   },
   "status": {
     "allOnline": "所有节点运行正常。",

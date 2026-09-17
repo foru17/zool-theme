@@ -4,10 +4,9 @@
     "loadError": "暫時無法連線監控服務。",
     "loadErrorHint": "後端沒有回應，請檢查網路後重試。",
     "retry": "重試",
-    "poweredBy": "由 <link>{{name}}</link> 驅動",
+    "poweredBy": "由 <link /> 驅動",
     "theme": "ZOOL 主題 {{version}}",
-    "productBy": "<brand /> 出品的主題",
-    "productByAria": "ZOOL 出品的主題"
+    "productBy": "<link /> 出品的主題"
   },
   "status": {
     "allOnline": "所有節點運作正常。",

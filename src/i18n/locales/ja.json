@@ -4,10 +4,9 @@
     "loadError": "モニターに接続できません。",
     "loadErrorHint": "バックエンドから応答がありません。接続を確認して、もう一度お試しください。",
     "retry": "再試行",
-    "poweredBy": "Powered by <link>{{name}}</link>",
+    "poweredBy": "Powered by <link />",
     "theme": "ZOOL テーマ {{version}}",
-    "productBy": "<brand /> によるテーマ",
-    "productByAria": "ZOOL によるテーマ"
+    "productBy": "<link /> によるテーマ"
   },
   "status": {
     "allOnline": "すべてのノードが正常に稼働しています。",

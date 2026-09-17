@@ -4,10 +4,9 @@
     "loadError": "Could not reach the monitor.",
     "loadErrorHint": "The backend did not answer. Check the connection and try again.",
     "retry": "Try again",
-    "poweredBy": "Powered by <link>{{name}}</link>",
+    "poweredBy": "Powered by <link />",
     "theme": "ZOOL theme {{version}}",
-    "productBy": "A theme by <brand />",
-    "productByAria": "A theme by ZOOL"
+    "productBy": "A theme by <link />"
   },
   "status": {
     "allOnline": "All systems operational.",

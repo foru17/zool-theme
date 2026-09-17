@@ -150,4 +150,4 @@ tile colours from Simple Icons metadata, the Windows shape is drawn for this pro
 
 [MIT](LICENSE). The ZOOL name and logo are trademarks of ZOOL LLC.
 
-<p align="center"><sub>Made by <a href="https://zool.app">ZOOL</a></sub></p>
+<p align="center"><sub>A theme by <a href="https://x.com/luoleiorg">@luoleiorg</a></sub></p>

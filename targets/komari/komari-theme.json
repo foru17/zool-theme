@@ -1,9 +1,9 @@
 {
   "name": "ZOOL",
   "short": "zool-theme",
-  "description": "A calm, refined theme by ZOOL. Light and dark, four languages, live charts. 简约精致的 Komari 主题，支持明暗模式与多语言。",
+  "description": "A calm, refined theme by @luoleiorg. Light and dark, four languages, live charts. 简约精致的 Komari 主题，支持明暗模式与多语言。",
   "version": "1.0.0",
-  "author": "ZOOL",
+  "author": "luoleiorg",
   "url": "https://github.com/foru17/zool-theme",
   "preview": "preview.png",
   "configuration": {

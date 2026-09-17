@@ -141,4 +141,4 @@ pnpm build && pnpm check:size && pnpm package
 
 [MIT](LICENSE)。ZOOL 名称与标志为 ZOOL LLC 的商标。
 
-<p align="center"><sub>由 <a href="https://zool.app">ZOOL</a> 出品</sub></p>
+<p align="center"><sub>由 <a href="https://x.com/luoleiorg">@luoleiorg</a> 出品</sub></p>

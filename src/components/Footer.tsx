@@ -22,9 +22,8 @@ export function Footer() {
           <p>
             <Trans
               i18nKey="app.poweredBy"
-              values={{ name: adapter.poweredBy.name }}
               components={{
-                link: <a className="text-ink underline-offset-4 hover:underline" href={adapter.poweredBy.url} target="_blank" rel="noreferrer" />,
+                link: <a className="text-ink underline-offset-4 hover:underline" href={adapter.poweredBy.url} target="_blank" rel="noreferrer">{adapter.poweredBy.name}</a>,
               }}
             />
             <span className="mx-2 text-faint">·</span>
@@ -39,20 +38,14 @@ export function Footer() {
             </a>
           </p>
         </div>
-        <a
-          href="https://zool.app"
-          target="_blank"
-          rel="noreferrer"
-          className="flex items-center gap-3 text-[12px] text-muted transition-colors hover:text-ink"
-          aria-label={t('app.productByAria')}
-        >
+        <p className="text-[12px] text-muted">
           <Trans
             i18nKey="app.productBy"
             components={{
-              brand: <Wordmark className="h-[11px] w-auto" />,
+              link: <a className="text-ink underline-offset-4 hover:underline" href="https://x.com/luoleiorg" target="_blank" rel="noreferrer">@luoleiorg</a>,
             }}
           />
-        </a>
+        </p>
       </div>
       {/* The closing wordmark from the ZOOL site, cropped so it rises from the page edge. */}
       <div className="wrap h-[clamp(40px,9vw,112px)] overflow-hidden" aria-hidden="true">

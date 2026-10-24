@@ -74,8 +74,16 @@ interface NezhaSetting {
 }
 
 interface NezhaServiceInfo {
-  service_id: number
-  service_name: string
+  /**
+   * Nezha v2 renamed these two fields: the JSON tags of model.ServiceInfos are
+   * "monitor_id" / "monitor_name" (model/service_history_api.go, v2.0.0 onwards).
+   * Nezha v1 shipped them as "service_id" / "service_name", so both spellings are
+   * read here. The monitor name is the latency target the row is labelled with.
+   */
+  monitor_id?: number
+  monitor_name?: string
+  service_id?: number
+  service_name?: string
   created_at: number[] | null
   avg_delay: number[] | null
 }
@@ -399,20 +407,23 @@ export const nezha: MonitorAdapter = {
     const res = await request<Common<NezhaServiceInfo[]>>(`/api/v1/server/${encodeURIComponent(id)}/service`)
     const tasks: PingData['tasks'] = []
     const points: PingData['points'] = []
-    for (const s of res.data ?? []) {
+    for (const [index, s] of (res.data ?? []).entries()) {
       const at = s.created_at ?? []
       const delay = s.avg_delay ?? []
       const values = delay.filter((v) => v > 0)
+      // Nezha v2 calls a latency target a "monitor" and names it monitor_name.
+      const id = s.monitor_id ?? s.service_id ?? index
+      const name = s.monitor_name ?? s.service_name ?? ''
       tasks.push({
-        id: s.service_id,
-        name: s.service_name,
+        id,
+        name,
         interval: 0,
         loss: 0,
         avg: values.length ? values.reduce((a, b) => a + b, 0) / values.length : 0,
         min: values.length ? Math.min(...values) : 0,
         max: values.length ? Math.max(...values) : 0,
       })
-      at.forEach((t, i) => points.push({ at: t, task: s.service_id, value: delay[i] ?? -1 }))
+      at.forEach((t, i) => points.push({ at: t, task: id, value: delay[i] ?? -1 }))
     }
     points.sort((a, b) => a.at - b.at)
     return { tasks, points }
